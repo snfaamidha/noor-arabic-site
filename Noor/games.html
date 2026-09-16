@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try {
+    if (!localStorage.getItem('la-profile')) {
+      window.location.replace('signup.html');
+    }
+  } catch(e) {}
+})();
+</script>
+<title>نور | Games | ألعاب</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="star-mark" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 6 L74 40 L110 40 L80 62 L92 96 L60 76 L28 96 L40 62 L10 40 L46 40 Z" fill="currentColor"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">نور</span>
+        <span class="brand-tagline"><span class="en">Knowledge is Light</span><span class="ar">المعرفة نور</span></span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html"><span class="en">Home</span><span class="ar">الرئيسية</span></a></li>
+      <li><a href="letters.html"><span class="en">Letters</span><span class="ar">الحروف</span></a></li>
+      <li><a href="reading.html"><span class="en">Reading</span><span class="ar">القراءة</span></a></li>
+      <li><a href="quiz.html"><span class="en">Quiz</span><span class="ar">اختبار</span></a></li>
+      <li><a href="lessons.html"><span class="en">Grammar</span><span class="ar">القواعد</span></a></li>
+      <li><a href="grades.html"><span class="en">Lessons</span><span class="ar">الصفوف</span></a></li>
+      <li><a href="worksheets.html"><span class="en">Worksheets</span><span class="ar">أوراق العمل</span></a></li>
+      <li><a href="culture.html"><span class="en">Culture</span><span class="ar">الثقافة</span></a></li>
+      <li><a href="games.html"><span class="en">Games</span><span class="ar">ألعاب</span></a></li>
+      <li><a href="practice.html"><span class="en">Practice</span><span class="ar">تدرّب</span></a></li>
+      <li><a href="profile.html"><span class="en">Profile</span><span class="ar">ملفي</span></a></li>
+      <li><a href="about.html"><span class="en">About</span><span class="ar">حول</span></a></li>
+    </ul>
+    <div class="profile-chip" id="profileChip"></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1><span class="en">Games</span> <span class="ar">ألعاب</span></h1>
+    <p>Reinforce letters and vocabulary through play.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="game-tabs">
+      <button class="game-tab active" data-target="matchPanel" type="button">Word Matching</button>
+      <button class="game-tab" data-target="memoryPanel" type="button">Memory Game</button>
+      <button class="game-tab" data-target="audioPanel" type="button">Audio Match</button>
+    </div>
+
+    <div class="game-panel active" id="matchPanel">
+      <p style="text-align:center;">Match each Arabic word with its English meaning.</p>
+      <div class="match-grid" id="matchGame">
+        <div class="match-col ar-col"></div>
+        <div class="match-col en-col"></div>
+      </div>
+      <p class="game-status"></p>
+    </div>
+
+    <div class="game-panel" id="memoryPanel">
+      <p style="text-align:center;">Flip two cards at a time — match each Arabic word with its English meaning.</p>
+      <div class="memory-grid" id="memoryGrid"></div>
+      <p class="game-status" id="memoryStatus">Pairs found: 0 / 8</p>
+    </div>
+
+    <div class="game-panel" id="audioPanel">
+      <p style="text-align:center;">Press play, listen carefully, then tap the word you heard.</p>
+      <div class="audio-match-card">
+        <button type="button" class="audio-play-btn" id="audioPlayBtn">🔊 Play Sound</button>
+        <div class="audio-match-options" id="audioOptions"></div>
+        <p class="game-status" id="audioStatus">Score: 0 / 0</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="credit">Made by Aaira, Faamidha and Nazneen – Arabic Learning Platform</p>
+    <p class="tagline">Proud to learn Arabic and celebrate our identity.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
