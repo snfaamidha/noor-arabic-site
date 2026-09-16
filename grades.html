@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try {
+    if (!localStorage.getItem('la-profile')) {
+      window.location.replace('signup.html');
+    }
+  } catch(e) {}
+})();
+</script>
+<title>نور | Lessons | الصفوف</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="star-mark" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 6 L74 40 L110 40 L80 62 L92 96 L60 76 L28 96 L40 62 L10 40 L46 40 Z" fill="currentColor"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">نور</span>
+        <span class="brand-tagline"><span class="en">Knowledge is Light</span><span class="ar">المعرفة نور</span></span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html"><span class="en">Home</span><span class="ar">الرئيسية</span></a></li>
+      <li><a href="letters.html"><span class="en">Letters</span><span class="ar">الحروف</span></a></li>
+      <li><a href="reading.html"><span class="en">Reading</span><span class="ar">القراءة</span></a></li>
+      <li><a href="quiz.html"><span class="en">Quiz</span><span class="ar">اختبار</span></a></li>
+      <li><a href="lessons.html"><span class="en">Grammar</span><span class="ar">القواعد</span></a></li>
+      <li><a href="grades.html"><span class="en">Lessons</span><span class="ar">الصفوف</span></a></li>
+      <li><a href="worksheets.html"><span class="en">Worksheets</span><span class="ar">أوراق العمل</span></a></li>
+      <li><a href="culture.html"><span class="en">Culture</span><span class="ar">الثقافة</span></a></li>
+      <li><a href="games.html"><span class="en">Games</span><span class="ar">ألعاب</span></a></li>
+      <li><a href="practice.html"><span class="en">Practice</span><span class="ar">تدرّب</span></a></li>
+      <li><a href="profile.html"><span class="en">Profile</span><span class="ar">ملفي</span></a></li>
+      <li><a href="about.html"><span class="en">About</span><span class="ar">حول</span></a></li>
+    </ul>
+    <div class="profile-chip" id="profileChip"></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1><span class="en">Lessons</span> <span class="ar">الصفوف</span></h1>
+    <p>A curriculum path from Grade 1 to Grade 12. Click any lesson to open it and try a short practice quiz.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:900px;">
+    <details class="grade-details" open>
+      <summary><span class="grade-num">1</span><span class="en"> Grade 1</span> <span class="grade-title-ar ar">الصف الأول</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g1l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> The Alphabet</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">الحروف الأبجدية</span></h4>
+          <p>In this lesson you'll learn to recognize and name Arabic letters by sight.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g1l1"></div>
+        <button class="grade-lesson" type="button" data-key="g1l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Short Vowels</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">الحركات القصيرة</span></h4>
+          <p>Short vowels (tashkeel) are small marks written above or below a letter.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g1l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">2</span><span class="en"> Grade 2</span> <span class="grade-title-ar ar">الصف الثاني</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g2l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Simple Words</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">كلمات بسيطة</span></h4>
+          <p>Blend 2–3 letters together to read simple, common words.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g2l1"></div>
+        <button class="grade-lesson" type="button" data-key="g2l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> First Sentences</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">أول جملة</span></h4>
+          <p>Read short sentences using the pattern "هَذَا" (this) + noun.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g2l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">3</span><span class="en"> Grade 3</span> <span class="grade-title-ar ar">الصف الثالث</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g3l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Everyday Vocabulary</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">مفردات يومية</span></h4>
+          <p>Build vocabulary around family, home, and school.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g3l1"></div>
+        <button class="grade-lesson" type="button" data-key="g3l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Subject + Verb Sentences</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">جملة الفعل والفاعل</span></h4>
+          <p>Arabic verbal sentences usually start with the verb, then the subject.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g3l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">4</span><span class="en"> Grade 4</span> <span class="grade-title-ar ar">الصف الرابع</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g4l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Present-Tense Verbs</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">الفعل المضارع</span></h4>
+          <p>Present-tense verbs change their prefix depending on the subject.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g4l1"></div>
+        <button class="grade-lesson" type="button" data-key="g4l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Short Passages</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">نصوص قصيرة</span></h4>
+          <p>Practice reading a short passage, then answer comprehension questions.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g4l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">5</span><span class="en"> Grade 5</span> <span class="grade-title-ar ar">الصف الخامس</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g5l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Plural Forms</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">صيغ الجمع</span></h4>
+          <p>Some plurals just add a suffix; others change shape entirely ("broken" plurals).</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g5l1"></div>
+        <button class="grade-lesson" type="button" data-key="g5l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Descriptive Adjectives</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">الصفات</span></h4>
+          <p>Adjectives usually follow the noun and must agree in gender and number.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g5l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">6</span><span class="en"> Grade 6</span> <span class="grade-title-ar ar">الصف السادس</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g6l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Past-Tense Verbs</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">الفعل الماضي</span></h4>
+          <p>Past-tense verbs take a suffix instead of a prefix.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g6l1"></div>
+        <button class="grade-lesson" type="button" data-key="g6l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Paragraph Writing</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">كتابة فقرة</span></h4>
+          <p>Combine several sentences with و (and) to build a short paragraph about your day.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g6l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">7</span><span class="en"> Grade 7</span> <span class="grade-title-ar ar">الصف السابع</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g7l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Prepositions &amp; Question Words</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">حروف الجر وأدوات الاستفهام</span></h4>
+          <p>Learn common prepositions and question words used every day.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g7l1"></div>
+        <button class="grade-lesson" type="button" data-key="g7l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Short Stories</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">قصص قصيرة</span></h4>
+          <p>Read a short story, then answer both literal and inferential questions.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g7l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">8</span><span class="en"> Grade 8</span> <span class="grade-title-ar ar">الصف الثامن</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g8l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Compound Sentences</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">الجمل المركبة</span></h4>
+          <p>Combine ideas using و (and), لكن (but), and لأن (because).</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g8l1"></div>
+        <button class="grade-lesson" type="button" data-key="g8l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Letter Writing</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">كتابة رسالة</span></h4>
+          <p>A personal letter needs a greeting, a body, and a closing.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g8l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">9</span><span class="en"> Grade 9</span> <span class="grade-title-ar ar">الصف التاسع</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g9l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Case Endings (إعراب)</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">أساسيات الإعراب</span></h4>
+          <p>The ending of a word can change based on its grammatical role.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g9l1"></div>
+        <button class="grade-lesson" type="button" data-key="g9l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Intermediate Literature</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">أدب متوسط</span></h4>
+          <p>Read short excerpts from modern Arabic literature and discuss theme and tone.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g9l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">10</span><span class="en"> Grade 10</span> <span class="grade-title-ar ar">الصف العاشر</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g10l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Introduction to Poetry</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">مقدمة في الشعر</span></h4>
+          <p>Classical Arabic poetry (الشعر) uses rhythm (وزن) and rhyme (قافية).</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g10l1"></div>
+        <button class="grade-lesson" type="button" data-key="g10l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Verb Forms (أوزان الفعل)</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">أوزان الفعل</span></h4>
+          <p>Arabic verbs follow patterns (أوزان) built from a three-letter root.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g10l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">11</span><span class="en"> Grade 11</span> <span class="grade-title-ar ar">الصف الحادي عشر</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g11l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Formal &amp; News Arabic</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">اللغة الإعلامية</span></h4>
+          <p>Journalistic Arabic uses a more formal register than everyday speech.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g11l1"></div>
+        <button class="grade-lesson" type="button" data-key="g11l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Essay Writing</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">كتابة المقال</span></h4>
+          <p>A structured essay has an introduction, body paragraphs, and a conclusion.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g11l2"></div>
+      </div>
+    </details>
+
+    <details class="grade-details">
+      <summary><span class="grade-num">12</span><span class="en"> Grade 12</span> <span class="grade-title-ar ar">الصف الثاني عشر</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="grade-body">
+        <button class="grade-lesson" type="button" data-key="g12l1">
+          <h4><span class="tag">Lesson 1</span><span class="en"> Classical Texts &amp; Rhetoric</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">النصوص الكلاسيكية والبلاغة</span></h4>
+          <p>Rhetoric (البلاغة) studies how language creates beauty and persuasion — through simile, metaphor, and more.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g12l1"></div>
+        <button class="grade-lesson" type="button" data-key="g12l2">
+          <h4><span class="tag">Lesson 2</span><span class="en"> Capstone Project</span> <span class="ar" style="font-size:.85rem; font-weight:500; color:var(--green-deep);">مشروع التخرج</span></h4>
+          <p>Research a topic of your choice in Arabic, then prepare a short paper or presentation.</p>
+          <span class="lesson-cta">Open lesson &amp; practice ▸</span>
+        </button>
+        <div class="lesson-content" id="content-g12l2"></div>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="credit">Made by Aaira, Faamidha and Nazneen – Arabic Learning Platform</p>
+    <p class="tagline">Proud to learn Arabic and celebrate our identity.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

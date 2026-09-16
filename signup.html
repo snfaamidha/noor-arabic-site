@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نور | Sign Up | تسجيل الدخول</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="signup-wrap">
+  <div class="signup-card">
+    <svg class="star-mark" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 6 L74 40 L110 40 L80 62 L92 96 L60 76 L28 96 L40 62 L10 40 L46 40 Z" fill="currentColor"/></svg>
+    <h1 class="ar" style="font-size:2.2rem; margin-bottom:2px;">نور</h1>
+    <span class="ar" style="font-size:.85rem; color:var(--gold); display:block; margin-bottom:14px;">المعرفة نور <span style="color:var(--ink-soft);">· Knowledge is Light</span></span>
+    <p style="margin-bottom:0;">Tell us a bit about yourself to get started.</p>
+
+    <form class="signup-form" id="signupFormStudent">
+      <div>
+        <label for="suName">Your Name</label>
+        <input type="text" id="suName" placeholder="e.g. Sara" required>
+      </div>
+      <div>
+        <label for="suGrade">Grade</label>
+        <select id="suGrade" required>
+          <option value="">Select your grade</option>
+          <option value="1">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="4">Grade 4</option>
+          <option value="5">Grade 5</option>
+          <option value="6">Grade 6</option>
+          <option value="7">Grade 7</option>
+          <option value="8">Grade 8</option>
+          <option value="9">Grade 9</option>
+          <option value="10">Grade 10</option>
+          <option value="11">Grade 11</option>
+          <option value="12">Grade 12</option>
+        </select>
+      </div>
+      <div>
+        <label for="suEmail">Email <span style="font-weight:400;">(optional)</span></label>
+        <input type="email" id="suEmail" placeholder="you@example.com">
+      </div>
+      <p class="signup-error" id="suError"></p>
+      <button type="submit" class="btn btn-primary" style="justify-content:center;">Start Learning</button>
+    </form>
+
+    <p class="signup-note">Your info is saved only on this device, just to personalize your visit — no account or internet connection required.</p>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

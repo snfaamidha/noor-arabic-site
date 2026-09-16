@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try {
+    if (!localStorage.getItem('la-profile')) {
+      window.location.replace('signup.html');
+    }
+  } catch(e) {}
+})();
+</script>
+<title>نور | Worksheets | أوراق العمل</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="star-mark" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 6 L74 40 L110 40 L80 62 L92 96 L60 76 L28 96 L40 62 L10 40 L46 40 Z" fill="currentColor"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">نور</span>
+        <span class="brand-tagline"><span class="en">Knowledge is Light</span><span class="always-ar">المعرفة نور</span></span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html"><span class="en">Home</span><span class="always-ar">الرئيسية</span></a></li>
+      <li><a href="letters.html"><span class="en">Letters</span><span class="always-ar">الحروف</span></a></li>
+      <li><a href="reading.html"><span class="en">Reading</span><span class="always-ar">القراءة</span></a></li>
+      <li><a href="quiz.html"><span class="en">Quiz</span><span class="always-ar">اختبار</span></a></li>
+      <li><a href="lessons.html"><span class="en">Grammar</span><span class="always-ar">القواعد</span></a></li>
+      <li><a href="grades.html"><span class="en">Lessons</span><span class="always-ar">الصفوف</span></a></li>
+      <li><a href="worksheets.html"><span class="en">Worksheets</span><span class="always-ar">أوراق العمل</span></a></li>
+      <li><a href="culture.html"><span class="en">Culture</span><span class="always-ar">الثقافة</span></a></li>
+      <li><a href="games.html"><span class="en">Games</span><span class="always-ar">ألعاب</span></a></li>
+      <li><a href="practice.html"><span class="en">Practice</span><span class="always-ar">تدرّب</span></a></li>
+      <li><a href="profile.html"><span class="en">Profile</span><span class="always-ar">ملفي</span></a></li>
+      <li><a href="about.html"><span class="en">About</span><span class="always-ar">حول</span></a></li>
+    </ul>
+    <div class="profile-chip" id="profileChip"></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1><span class="en">Worksheets</span> <span class="always-ar">أوراق العمل</span></h1>
+    <p>Printable practice sheets — use the print button on each one, or print the whole page.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:820px;">
+
+    <div class="worksheet">
+      <div class="worksheet-head">
+        <div>
+          <h3><span class="en">Worksheet 1 — Trace the Letters</span> <span class="ar" style="font-size:1rem;">تتبّع الحروف</span></h3>
+          <p style="margin:0;">Trace each letter, then write it three more times on your own.</p>
+        </div>
+        <button class="print-btn" type="button" onclick="window.print()">🖨 Print</button>
+      </div>
+      <div class="ws-letterhead">
+        <span class="ws-letterhead-brand">نور</span>
+        <span class="ws-field">Name: <span class="ws-fill"></span></span>
+        <span class="ws-field">Class: <span class="ws-fill"></span></span>
+        <span class="ws-field">Date: <span class="ws-fill"></span></span>
+      </div>
+      <div class="ws-trace-grid">
+        <div class="ws-trace-box">ا</div>
+        <div class="ws-trace-box">ب</div>
+        <div class="ws-trace-box">ت</div>
+        <div class="ws-trace-box">ث</div>
+        <div class="ws-trace-box">ج</div>
+        <div class="ws-trace-box">ح</div>
+        <div class="ws-trace-box">خ</div>
+        <div class="ws-trace-box">د</div>
+        <div class="ws-trace-box">ذ</div>
+        <div class="ws-trace-box">ر</div>
+        <div class="ws-trace-box">ز</div>
+        <div class="ws-trace-box">س</div>
+      </div>
+      <div class="ws-line"></div>
+      <div class="ws-line" style="margin-top:8px;"></div>
+      <button type="button" class="ws-answer-toggle">🔑 <span class="en">Show Answer Key</span></button>
+      <div class="ws-answer-key">
+        <span class="key-label en">Answer Key</span>
+        <p class="en">This is a handwriting practice sheet — there's no single "correct" answer. Check that each traced letter matches the shape shown, and that the three extra copies are recognizable and written right-to-left:</p>
+        <p class="always-ar" style="font-size:1.5rem; letter-spacing:6px;">ا ب ت ث ج ح خ د ذ ر ز س</p>
+      </div>
+    </div>
+
+    <div class="worksheet">
+      <div class="worksheet-head">
+        <div>
+          <h3><span class="en">Worksheet 2 — Match the Word to Its Meaning</span> <span class="ar" style="font-size:1rem;">وصّل الكلمة بمعناها</span></h3>
+          <p style="margin:0;">Draw a line connecting each Arabic word to its English meaning.</p>
+        </div>
+        <button class="print-btn" type="button" onclick="window.print()">🖨 Print</button>
+      </div>
+      <div class="ws-letterhead">
+        <span class="ws-letterhead-brand">نور</span>
+        <span class="ws-field">Name: <span class="ws-fill"></span></span>
+        <span class="ws-field">Class: <span class="ws-fill"></span></span>
+        <span class="ws-field">Date: <span class="ws-fill"></span></span>
+      </div>
+      <table class="ws-table">
+        <thead><tr><th>Arabic</th><th style="width:60px;"></th><th>English</th></tr></thead>
+        <tbody>
+          <tr><td class="always-ar">مَدْرَسَة</td><td>•&nbsp;&nbsp;&nbsp;•</td><td>Lion</td></tr>
+          <tr><td class="always-ar">طَالِب</td><td>•&nbsp;&nbsp;&nbsp;•</td><td>Pen</td></tr>
+          <tr><td class="always-ar">قَلَم</td><td>•&nbsp;&nbsp;&nbsp;•</td><td>School</td></tr>
+          <tr><td class="always-ar">أَسَد</td><td>•&nbsp;&nbsp;&nbsp;•</td><td>Camel</td></tr>
+          <tr><td class="always-ar">جَمَل</td><td>•&nbsp;&nbsp;&nbsp;•</td><td>Student</td></tr>
+        </tbody>
+      </table>
+      <button type="button" class="ws-answer-toggle">🔑 <span class="en">Show Answer Key</span></button>
+      <div class="ws-answer-key">
+        <span class="key-label en">Answer Key</span>
+        <p><span class="always-ar">مَدْرَسَة</span> <span class="en">→ School</span></p>
+        <p><span class="always-ar">طَالِب</span> <span class="en">→ Student</span></p>
+        <p><span class="always-ar">قَلَم</span> <span class="en">→ Pen</span></p>
+        <p><span class="always-ar">أَسَد</span> <span class="en">→ Lion</span></p>
+        <p><span class="always-ar">جَمَل</span> <span class="en">→ Camel</span></p>
+      </div>
+    </div>
+
+    <div class="worksheet">
+      <div class="worksheet-head">
+        <div>
+          <h3><span class="en">Worksheet 3 — Fill in the Missing Letter</span> <span class="ar" style="font-size:1rem;">أكمل الحرف الناقص</span></h3>
+          <p style="margin:0;">Write the missing letter in each blank to complete the word.</p>
+        </div>
+        <button class="print-btn" type="button" onclick="window.print()">🖨 Print</button>
+      </div>
+      <div class="ws-letterhead">
+        <span class="ws-letterhead-brand">نور</span>
+        <span class="ws-field">Name: <span class="ws-fill"></span></span>
+        <span class="ws-field">Class: <span class="ws-fill"></span></span>
+        <span class="ws-field">Date: <span class="ws-fill"></span></span>
+      </div>
+      <table class="ws-table">
+        <tbody>
+          <tr><td class="always-ar" style="font-size:1.4rem;">بَيْ___</td><td>(house)</td></tr>
+          <tr><td class="always-ar" style="font-size:1.4rem;">قَمَ___</td><td>(moon)</td></tr>
+          <tr><td class="always-ar" style="font-size:1.4rem;">كِتَا___</td><td>(book)</td></tr>
+          <tr><td class="always-ar" style="font-size:1.4rem;">جَمَ___</td><td>(camel)</td></tr>
+          <tr><td class="always-ar" style="font-size:1.4rem;">شَمْ___</td><td>(sun)</td></tr>
+        </tbody>
+      </table>
+      <button type="button" class="ws-answer-toggle">🔑 <span class="en">Show Answer Key</span></button>
+      <div class="ws-answer-key">
+        <span class="key-label en">Answer Key</span>
+        <p><span class="always-ar" style="font-size:1.3rem;">بَيْت</span> <span class="en">— missing letter: ت (house)</span></p>
+        <p><span class="always-ar" style="font-size:1.3rem;">قَمَر</span> <span class="en">— missing letter: ر (moon)</span></p>
+        <p><span class="always-ar" style="font-size:1.3rem;">كِتَاب</span> <span class="en">— missing letter: ب (book)</span></p>
+        <p><span class="always-ar" style="font-size:1.3rem;">جَمَل</span> <span class="en">— missing letter: ل (camel)</span></p>
+        <p><span class="always-ar" style="font-size:1.3rem;">شَمْس</span> <span class="en">— missing letter: س (sun)</span></p>
+      </div>
+    </div>
+
+    <div class="worksheet">
+      <div class="worksheet-head">
+        <div>
+          <h3><span class="en">Worksheet 4 — Translate to Arabic</span> <span class="ar" style="font-size:1rem;">ترجم إلى العربية</span></h3>
+          <p style="margin:0;">Write the Arabic word for each English word below.</p>
+        </div>
+        <button class="print-btn" type="button" onclick="window.print()">🖨 Print</button>
+      </div>
+      <div class="ws-letterhead">
+        <span class="ws-letterhead-brand">نور</span>
+        <span class="ws-field">Name: <span class="ws-fill"></span></span>
+        <span class="ws-field">Class: <span class="ws-fill"></span></span>
+        <span class="ws-field">Date: <span class="ws-fill"></span></span>
+      </div>
+      <table class="ws-table">
+        <thead><tr><th>English</th><th>Write in Arabic</th></tr></thead>
+        <tbody>
+          <tr><td>Teacher</td><td class="ws-line"></td></tr>
+          <tr><td>Friend</td><td class="ws-line"></td></tr>
+          <tr><td>Water</td><td class="ws-line"></td></tr>
+          <tr><td>Beautiful</td><td class="ws-line"></td></tr>
+          <tr><td>Big</td><td class="ws-line"></td></tr>
+        </tbody>
+      </table>
+      <button type="button" class="ws-answer-toggle">🔑 <span class="en">Show Answer Key</span></button>
+      <div class="ws-answer-key">
+        <span class="key-label en">Answer Key</span>
+        <p><span class="en">Teacher</span> <span class="always-ar" style="font-size:1.3rem;">→ مُعَلِّم</span></p>
+        <p><span class="en">Friend</span> <span class="always-ar" style="font-size:1.3rem;">→ صَدِيق</span></p>
+        <p><span class="en">Water</span> <span class="always-ar" style="font-size:1.3rem;">→ مَاء</span></p>
+        <p><span class="en">Beautiful</span> <span class="always-ar" style="font-size:1.3rem;">→ جَمِيل</span></p>
+        <p><span class="en">Big</span> <span class="always-ar" style="font-size:1.3rem;">→ كَبِير</span></p>
+      </div>
+    </div>
+
+    <div class="worksheet">
+      <div class="worksheet-head">
+        <div>
+          <h3><span class="en">Worksheet 5 — Reading Comprehension</span> <span class="ar" style="font-size:1rem;">فهم المقروء</span></h3>
+          <p style="margin:0;">Read the passage, then answer the questions in Arabic.</p>
+        </div>
+        <button class="print-btn" type="button" onclick="window.print()">🖨 Print</button>
+      </div>
+      <div class="ws-letterhead">
+        <span class="ws-letterhead-brand">نور</span>
+        <span class="ws-field">Name: <span class="ws-fill"></span></span>
+        <span class="ws-field">Class: <span class="ws-fill"></span></span>
+        <span class="ws-field">Date: <span class="ws-fill"></span></span>
+      </div>
+      <p class="always-ar" style="font-size:1.25rem; line-height:2; margin:14px 0;">هَذَا بَيْتِي. البَيْتُ كَبِيرٌ وَجَمِيلٌ. فِي البَيْتِ غُرْفَةُ نَوْمٍ وَمَطْبَخٌ وَحَدِيقَةٌ. أَنَا أُحِبُّ بَيْتِي كَثِيرًا.</p>
+      <div style="margin-top:14px;">
+        <p class="always-ar" style="margin-bottom:4px;">١. كيف يوصف البيت؟</p>
+        <div class="ws-line"></div>
+        <p class="always-ar" style="margin:14px 0 4px;">٢. ماذا يوجد في البيت؟</p>
+        <div class="ws-line"></div>
+        <p class="always-ar" style="margin:14px 0 4px;">٣. كم يحب المتحدث بيته؟</p>
+        <div class="ws-line"></div>
+      </div>
+      <button type="button" class="ws-answer-toggle">🔑 <span class="en">Show Answer Key</span></button>
+      <div class="ws-answer-key">
+        <span class="key-label en">Answer Key</span>
+        <p><span class="always-ar" style="font-size:1.05rem;">١. كبير وجميل</span> <span class="en">— (big and beautiful)</span></p>
+        <p><span class="always-ar" style="font-size:1.05rem;">٢. غرفة نوم ومطبخ وحديقة</span> <span class="en">— (a bedroom, a kitchen, and a garden)</span></p>
+        <p><span class="always-ar" style="font-size:1.05rem;">٣. كثيرًا</span> <span class="en">— (very much)</span></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="credit">Made by Aaira, Faamidha and Nazneen – Arabic Learning Platform</p>
+    <p class="tagline">Proud to learn Arabic and celebrate our identity.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
